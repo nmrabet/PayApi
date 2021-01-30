@@ -1,31 +1,9 @@
 import React from "react";
-import Logo from "../assets/logo.svg";
 import Phone from "../assets/illustration-phone-mockup.svg";
-import Menu from './Menu';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = React.useState(false);
-
   return (
     <div className='bg-primary'>
-      <div className='md:flex flex-row justify-between'>
-        <div className='flex justify-between md:flex flex-row items-center space-x-10 p-12'>
-          <img src={Logo} alt='logo' />
-          <Menu className='md:invisible' onClick={() => setIsOpen(true)}/>
-          {/* <nav>
-            <ul className='invisible lg:visible font-bold text-sixth flex flex-row space-x-10'>
-              <li>Pricing</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </nav> */}
-        </div>
-        <div className='md:flex flex-row items-center pr-12'>
-          <button className='invisible md:visible border rounded-full bg-fourth text-white py-2 px-4 font-bold'>
-            Schedule a Demo
-          </button>
-        </div>
-      </div>
       <div className='md:flex flex-col justify-center items-center'>
         <img src={Phone} alt='' />
         <div>
