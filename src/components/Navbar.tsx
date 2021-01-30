@@ -6,13 +6,13 @@ export default function Navbar() {
   return (
     <div className='flex items-center justify-evenly p-8'>
       <img src={Logo} alt="logo"/>
-      <ul className='flex space-x-6'>
+      <ul className='invisible md:visible flex space-x-6'>
           <li>Pricing</li>
           <li>About</li>
           <li>Contact</li>
       </ul>
-      <Menu />
-      <button>Schedule a Demo</button>
+      <button className='invisible md:visible'>Schedule a Demo</button>
+      <Menu className='md:invisible'/>
     </div>
   );
 }
